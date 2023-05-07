@@ -1,5 +1,5 @@
 import sys
-# print(sys.executable)
+print(sys.executable)
 
 import streamlit as st
 import pandas as pd
