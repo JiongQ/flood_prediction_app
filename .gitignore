@@ -6,8 +6,8 @@ __pycache__/
 
 # JY Added
 *.bat
-*.lock
-*.toml
+# *.lock
+# *.toml
 backup/
 
 # C extensions

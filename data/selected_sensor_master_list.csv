@@ -1,0 +1,236 @@
+sensor_id,site_name,lon,lat
+CWS001,Alexandra Canal SD B (Prince Philip Ave),103.8195,1.2918
+CWS014,Bt Timah Canal (Keng Lee Rd),103.84,1.3131
+CWS020,Happy Ave OD (Jln Setia),103.8806,1.3338
+CWS026,Pelton Canal (Kallang Way),103.8788,1.3217
+CWS028,Macpherson OD (Geylang Bahru),103.8687,1.3238
+CWS033,Stamford Canal (Orchard Tower),103.8291,1.3067
+CWS034,Queen's Rd OD (Prince Rd),103.8098,1.321
+CWS035,Lor Chuan OD (Serangoon Ave 2),103.8667,1.3529
+CWS046,Upper Paya Lebar Rd,103.8836,1.3426
+CWS049,Stamford Canal (Lucky Plaza),103.8333,1.3043
+CWS057,Ford Road OD (The Belvedere/Katong Pk),103.8872,1.2968
+CWS063,Adam Rd OD (Camden Pk),103.8144,1.3291
+CWS065,Eng Neo Ave OD (Eng Neo Ave d/s culvert),103.7983,1.3319
+CWS068,Indus Rd/ Ganges Ave,103.8297,1.2907
+CWS069,Bencoolen St/ Rochor Canal Rd,103.8539,1.3027
+CWS071,Jln Sultan/ Rochor Canal Rd,103.8592,1.3061
+CWS072,King George's Ave at PA HQ,103.8604,1.3088
+CWS075,Mandalay Rd/ Martaban Rd,103.8503,1.3244
+CWS082,Ubi Ave 2/ Eunos Link,103.9012,1.3311
+CWS084,Cambridge Road OD,103.8472,1.3141
+CWS086,Dunearn Rd / Hillcrest Rd,103.8059,1.3278
+CWS100,Veerasamy Rd,103.8557,1.3066
+CWS101,Macpherson Rd/ Playfair Rd,103.887,1.3332
+CWS102,Exeter Road / Somerset Rd,103.838,1.3002
+CWS104,Balestier Point,103.8525,1.3228
+CWS106,Boon Keng Rd / Bendemeer Rd,103.8629,1.3168
+CWS110,Lor Ong Lye / Lor Lew Lian,103.8779,1.3482
+CWS126,Kallang River (Potong Pasir Ave 3),103.8643,1.331
+CWS127,Siang Kuang Ave / Macpherson Rd,103.8731,1.3297
+CWS135,Paya Lebar OD (Arumugam Rd),103.8917,1.3256
+CWS144,Sg Kallang (Bishan Rd),103.8501,1.3574
+CWS147,Mackenzie Rd,103.8468,1.3074
+CWS151,Tembeling Road OD (East Coast Rd),103.9064,1.3055
+CWS152,Happy Avenue OD (Jln Anggerek),103.8822,1.3311
+CWS153,Geylang East Central OD (Paya Lebar Rd),103.8921,1.3182
+CWS154,Tanjong Pagar Rd/Craig Rd,103.8435,1.2773
+CWS156,Jln Seaview,103.8968,1.3017
+CWS158,Cavenagh Rd/ Kramat Lane,103.8414,1.3013
+CWS161,Playfair Rd OD (Bartley Rd East),103.8818,1.3415
+CWS162,Mount Vernon Rd,103.8811,1.3415
+CWS163,Balestier Rd / Thomson Rd,103.8425,1.3264
+CWS164,Craig Road/ Duxton Road,103.8432,1.2774
+CWS165,Tanjong Pagar Road (Tanjong Pagar Plaza),103.8433,1.2761
+CWS168,Sg Kallang SD (Jln Keli u/s culvert),103.8343,1.3542
+CWS171,Dunearn Rd (Tan Kah Kee DT Stop Log C),103.8073,1.3265
+CWS172,Dunearn Rd (Tan Kah Kee DT Stop Log B),103.8075,1.3263
+CWS173,Bt Timah Canal (Leng Kwang Baptist Church),103.8295,1.3195
+CWS174,Bt Timah Canal (ACS Sports Complex),103.8337,1.318
+CWS192,Happy Ave OD (Jln Gembira),103.882,1.3324
+CWS193,Harvey Rd/ Macpherson Rd,103.8845,1.333
+CWS206,Yio Chu Kang Rd (Wembly Residences),103.8761,1.3564
+CWS212,Andrew Rd OD (Jln Mashhor),103.8336,1.3352
+CWS220,Puay Hee Ave/ Siak Kew Ave,103.8702,1.3298
+CWS222,Happy Ave North/ Happy Ave Ctrl,103.8811,1.3311
+CWS226,Marine Parade Central/Marine Parade Rd,103.907,1.303
+CWS227,Jln Lokam/ Upp Paya Lebar Rd,103.8819,1.3455
+CWS228,Langsat Rd/ Lor 105 Changi,103.9028,1.3154
+CWS233,Upper Hokien St (Fook Hai Building),103.8463,1.2853
+CWS234,Upper Pickering St / New Bridge Rd,103.8458,1.2861
+CWS240,Adam Rd OD (Dunearn Rd),103.8138,1.3244
+CWS242,Jln Unggas OD (Jln Tempua),103.8184,1.3231
+CWS247,Joan Rd OD (Lornie Rd),103.8358,1.3411
+CWS260,Macpherson OD (Kolam Ayer CC),103.8692,1.3243
+CWS272,Pelton Canal (Merpati Rd),103.8847,1.327
+CWS276,Playfair OD (Harper Rd),103.8865,1.3348
+CWS277,Playfair OD (Macpherson Rd),103.8871,1.3329
+CWS282,Marina East OD (ECP Service Rd),103.8879,1.2944
+CWS300,AMK OD7 (Bishan-AMK Pk),103.8494,1.3619
+CWS302,AMK OD8 A (AMK Ave 1),103.8524,1.3592
+CWS312,Kallang River (Blk114 Potong Pasir)),103.8637,1.3373
+CWS326,Alexandra Canal SD A (Opp Alexis Condo),103.8081,1.2914
+CWS327,Aljunied Rd (Hong Leong NKF),103.8819,1.3204
+CWS333,Mountbatten Rd / Tanjong Katong Rd,103.8967,1.302
+CWS339,River Valley Rd/Oxley Rd,103.8401,1.296
+CWS391,Alexandra Canal SD B (Redhill Rd),103.8173,1.2877
+CWS394,Alexandra Canal SD B (Alexandra Rd u/s culvert),103.8193,1.2911
+CWS396,Alexandra Canal SD C (Gan Eng Seng Sch),103.8232,1.2905
+CWS397,Dunearn Rd (Watten Pk/Watten Dr),103.8074,1.3267
+CWS421,Bishopgate OD (Bishopgate Rd/Jervois Rd),103.8221,1.2954
+CWS431,Wan Tho Ave (Unit 11),103.8708,1.3323
+CWS433,Lor 2 Toa Payoh (Braddell MRT),103.8469,1.3405
+CWS447,Tg Katong Rd South OD (ECP Service Rd),103.8983,1.2961
+CWS454,Kallang River (Bendemeer Rd),103.8676,1.3231
+CWS460,Joo Chiat SD (Dunman Rd),103.9003,1.3097
+CWS462,Joo Chiat SD (Ceylon Rd),103.9,1.3093
+CWS487,Woollerton Dr (u/s culvert),103.8098,1.3171
+CWS488,Woollerton Dr/Gallop Pk Rd,103.81,1.3173
+EWS004,Bedok Canal (Upper Changi Rd),103.949,1.334
+EWS005,Bedok North Ave 3,103.9338,1.3356
+EWS007,Meng Suan OD (Mandai Rd),103.8173,1.4025
+EWS009,Sg Simpang Kiri (Sembawang OD No. 2),103.834,1.4489
+EWS011,Siglap Canal (Frankel Walk),103.9143,1.3171
+EWS015,Sg Serangoon Branch (Hougang Ave 7),103.896,1.3627
+EWS017,Sg Tongkang (Lor Buangkok),103.877,1.3827
+EWS027,Sg Sembawang Kechil (Woodlands Loop),103.8109,1.4498
+EWS033,Changi Airport Diversion Drain (Tanah Merah GC),103.9759,1.3264
+EWS034,Sg Ketapang (Xilin Ave),103.9634,1.3292
+EWS038,Siglap Rd/ Marine Parade Rd,103.9264,1.3093
+EWS042,Bedok North Ave 4/ SBS Depot,103.9488,1.3361
+EWS044,Bedok South Rd/ Bedok South Ave 1,103.933,1.3168
+EWS052,Jalan Kayu / Sengkang West Way,103.8734,1.3948
+EWS054,Neram OD (Upper Neram Rd),103.8672,1.3869
+EWS059,Terang Bulan Ave / New Upper Changi Rd,103.9239,1.3226
+EWS060,Jln Nipah,103.9524,1.3262
+EWS064,Yishun Ave 2 / Yishun Ave 5,103.8352,1.431
+EWS079,Bedok Canal(Upper Changi Rd East),103.9517,1.3306
+EWS081,Sg Tongkang (Yio Chu Kang Rd),103.8762,1.3798
+EWS083,Ang Mo Kio Ave 5/ Luxus Hill Rd,103.8686,1.3787
+EWS085,Tampines Road OD(Tampines Rd),103.8903,1.3613
+EWS086,Tampines Canal (Tampines Rd/Hougang Ave 3),103.8937,1.3618
+EWS088,Sg Blukar (Lorong Halus),103.9209,1.3822
+EWS089,Bedok Canal 3rd SD (Bedok Rd),103.9536,1.323
+EWS090,Seletar North Link,103.8791,1.429
+EWS094,Tampines Rd/ Jln Teliti,103.8918,1.3612
+EWS097,Telok Kurau OD (Still Rd),103.9049,1.3169
+EWS100,Bayshore Park OD (NCS Bedok),103.9309,1.3186
+EWS102,Upp East Coast Rd (Unit 517),103.9439,1.316
+EWS104,Sembawang Shipyard OD (Cochrame Lodge II),103.8176,1.4619
+EWS123,Sg Pinang (Seletar Club Rd),103.8611,1.4109
+EWS129,Serangoon Gardens OD3 (AMK Ave 3),103.8668,1.372
+EWS139,Sg Sembawang (Senoko Dr),103.8071,1.4663
+EWS146,Carmen St/ Lakme Terrace,103.9264,1.3176
+EWS147,Lakme Terrace (19),103.9263,1.3175
+EWS156,Siglap Canal (Ngee Ann Pri Sch),103.9189,1.3052
+EWS164,Bayshore Park OD (Jln Pokok Serunai),103.9363,1.3127
+EWS176,Sg Mata Ikan (Nasaco Tech Centre),103.9718,1.3373
+EWS180,Changi Airport Div Canal (Changi Coast Walk),103.9761,1.3175
+EWS182,Changi South CD 1 (Tanah Merah Coast Rd),103.985,1.3188
+EWS184,Sg Changi (Changi Airport Nursery),103.9941,1.3886
+EWS185,Changi CD2 South (Changi East Dr),103.9986,1.3132
+EWS187,Changi North Bay Drain 1 (Aviation Pk Rd),104.0043,1.3712
+EWS190,Changi North CD 1 (Aviation Pk Rd),104.0157,1.366
+EWS191,Changi North CD 2 (Aviation Pk Rd),104.02,1.3637
+EWS194,Kensington Pk Rd OD (Kensington Pk Rd),103.8668,1.3688
+EWS196,Sg Tongkang (Ang Mo Kio Ave 5),103.8752,1.3786
+EWS206,Kensington Park Rd/Jln Chulek,103.8669,1.3665
+EWS218,Sg Blukar SD A (Halus Link),103.9187,1.3819
+EWS234,Sg Tampines TD2 (Loyang Ave),103.9627,1.3613
+EWS236,Jln Pelikat OD (Hougang St 22),103.8914,1.3555
+EWS239,Jln Pelikat OD (Defu Lane 10/Hougang Ave 3),103.8931,1.3578
+EWS242,Jln Pelikat OD (Defu Ave 1/Tampines Rd),103.8946,1.3613
+EWS248,Cactus Rd OD (Cactus Dr),103.8524,1.3895
+EWS249,TPE Slip Rd (Punggol Crest),103.8993,1.3995
+EWS250,TPE Slip Rd (Punggol West Flyover),103.8965,1.4001
+EWS254,Siglap Canal SD (Lor Melayu),103.9106,1.3195
+EWS255,Pulau Punggol Timor OD2 (Seletar North Lk),103.8938,1.4195
+EWS275,Hougang Ave 10 (Hougang Polyclinic),103.8886,1.3697
+EWS283,Lower Seletar Reservoir 3rd Inlet (Yishun Ave 1),103.8495,1.421
+EWS315,Sg Sembawang (Canberra Sec Sch),103.813,1.4528
+EWS323,Yishun Ave 7 (Blk 288),103.8373,1.44
+EWS334,Sg Cina Outfall (Admiralty Rd West),103.777,1.451
+EWS346,Sg Sembawang Kechil (783B Woodlands Rise),103.8043,1.4468
+EWS349,Sg Sembawang OD1 (Woodlands Sunny Food),103.8088,1.4624
+EWS350,Sg Sembawang (Admiralty St),103.8111,1.4599
+EWS354,Sg Tampines (Tampines North Pri),103.9488,1.3612
+EWS355,Sg Tampines (Blk 495E Tampines St 43),103.9523,1.3643
+EWS368,Pasir Ris Pk OD (Heritage Chalet),103.9413,1.3865
+EWS378,Sg Sembawang (Admiralty Rd West u/s culvert),103.8103,1.4616
+EWS380,Sg Bedok (Upper Changi Rd East d/s culvert),103.9521,1.3294
+EWS381,Sg Bedok (Bedok North Ave 4 d/s culvert),103.9443,1.3355
+EWS382,Sg Bedok (Bedok North Ave 4 u/s culvert),103.9431,1.3357
+EWS395,Bedok North St 2/Bedok North Rd,103.9398,1.3277
+WWS001,Alexandra Rd/ Telok Blangah Rd,103.8029,1.2729
+WWS005,Bt Timah Canal (Rifle Range Rd),103.7816,1.3367
+WWS016,Sg Ulu Pandan (Sunset Walk),103.7673,1.3229
+WWS021,Ulu Pandan Canal (Pine Grove),103.7752,1.316
+WWS037,Jurong Industrial Estate OD (Jln Buroh),103.702,1.3144
+WWS040,Sg Bangkong (West Coast Rd),103.7599,1.3109
+WWS042,Sg Pandan Kechil (NUS),103.7768,1.3008
+WWS044,Sg Tengah Rd/ Sg Tengah Agrotechnology Pk,103.7312,1.3825
+WWS045,Mayfair OD (Sime Darby Centre),103.7832,1.3365
+WWS060,Sg Pandan Kechil (College Link),103.7734,1.3029
+WWS078,Wenya Earth Drain (Jurong West Ave 2),103.7143,1.3576
+WWS080,Sungei Pang Sua SD(Sungei Kadut Ave),103.7546,1.4067
+WWS081,Woodlands Rd/Sg Kadut Ave,103.7558,1.408
+WWS084,Sunset Dr/Sunset way,103.7661,1.3259
+WWS089,Gul Way/Pioneer Rd,103.6707,1.311
+WWS091,JIE OD (Enterprise Rd),103.707,1.3335
+WWS094,Gul Circle,103.6765,1.3126
+WWS096,Chin Bee Ave / Third Chin Bee Rd,103.7149,1.334
+WWS098,Sg Pandan Kechil (West Coast Highway),103.7632,1.3015
+WWS099,Ulu Pandan Rd / Clementi Rd,103.7714,1.3194
+WWS103,Upp Bt Timah OD (ESPA),103.7648,1.3694
+WWS107,Commonwealth Dr/ Commonwealth Lane,103.7976,1.3037
+WWS108,Commonwealth Lane (Opp CERTIS),103.7974,1.3044
+WWS110,Kampung Bahru Road/ Silat Road,103.8319,1.2765
+WWS112,Jurong East St 32 (Blk 311),103.7322,1.348
+WWS113,Wan Lee Rd/ Enterprise Rd,103.7055,1.3331
+WWS114,Jalan Boon Lay (Bus stop B21339),103.7083,1.3304
+WWS116,Choa Chu Kang Avenue 1/ Teck Wye Lane,103.7497,1.3807
+WWS117,Yuan Ching Rd / Yung Kuang Rd,103.7248,1.3316
+WWS120,Commonwealth Lane /Commonwealth Dr,103.7974,1.3045
+WWS122,Boon Lay Way (Blk 201),103.7156,1.3429
+WWS127,Jln Tukang OD (Unit 14),103.7131,1.3295
+WWS132,Sunset Dr (Unit 10),103.7673,1.3253
+WWS133,Alexandra Rd (Opp Fragrance Empire Bldg),103.8021,1.2749
+WWS137,Lor Kismis (Unit 2),103.765,1.3366
+WWS140,Sg Jurong (AYE),103.7332,1.3264
+WWS142,Penjuru Rd OD (Penjuru St),103.7295,1.3049
+WWS144,Jurong Port Rd OD (Jln Buroh),103.7164,1.3144
+WWS149,Pioneer Rd OD Outfall,103.658,1.3122
+WWS151,Sunview Way OD (Sunview Way),103.6999,1.3189
+WWS157,Tuas View OD3 (Tuas South Ave 1),103.6246,1.3073
+WWS160,Tuas Rd OD7 (Tuas West Dr),103.6331,1.3296
+WWS164,ZhengHua Rd OD (Opp ZhengHua Pri Sch),103.7693,1.3786
+WWS176,Chin Bee Rd/ International Rd,103.7133,1.3289
+WWS180,West Coast Rd (Blk 409),103.7471,1.3183
+WWS181,Yew Siang Road/ W Coast Hwy,103.7924,1.2769
+WWS183,Tuas South Blvd Ext OD1 (Tuas South Ave 5),103.6248,1.2889
+WWS189,Pioneer Rd OD (Tuas Rd),103.658,1.3164
+WWS196,Sg Lanchar SD A (17 Upper Jurong Rd),103.6926,1.3344
+WWS197,Sg Lanchar SD B2 (Blk 834 Jurong West Ave 5),103.6945,1.3433
+WWS198,Sg Lanchar SD B1 (Blk 866 Jurong West St 81),103.6957,1.3506
+WWS203,Sg Lanchar Sub Drain A (Pioneer Point),103.6978,1.3343
+WWS204,Sg Lanchar SD C (Jln Bahar),103.6981,1.3559
+WWS216,Jurong Port Rd SD1 (Jln Tepong),103.7193,1.3123
+WWS281,Sg Pandan (West Coast Rd),103.7493,1.3175
+WWS285,Sg Ulu Pandan (Freesia Woods),103.7658,1.3233
+WWS307,Sg Mandai (Woodlands Rd),103.7608,1.4335
+WWS309,Sg Mandai Kechil (Woodlands Rd),103.7679,1.4405
+WWS312,Bt Timah 1st Diversion Canal (Pine Grove),103.7726,1.3186
+WWS315,Tuas Rd End OD (unit no. 43),103.6496,1.3072
+WWS321,International Rd/ Second Chin Bee Rd,103.7143,1.3298
+WWS387,Tuas Ave 12/Tuas Ave 1,103.646,1.3354
+WWS398,Sg Kadut Dr/Kranji Way,103.7492,1.4351
+WWS403,Sg Kadut Dr/Kranji Link,103.7478,1.4321
+WWS412,Neo Pee Teck Lane (Unit 5),103.7687,1.2923
+WWS413,Neo Pee Teck Lane (Unit 6),103.7689,1.2924
+WWS416,Eng Kong Place OD (Fitness Corner),103.7669,1.3347
+WWS418,Eng Kong Place (Unit 65),103.7669,1.3344
+WWS450,Sg Pandan Kechil (University Flyover),103.7722,1.3033
+WWS454,Chin Bee Dr/Jln Boon Lay,103.7097,1.3362
+WWS459,Hillview Ave OD2 (Meralodge),103.7613,1.3547
+WWS468,Tuas South Blvd Ext Sea Side Outfall,103.6196,1.2838
+WWS469,Choa Chu Kang Ave 1 (Blk 124),103.7495,1.3804
