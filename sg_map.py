@@ -44,7 +44,8 @@ def _display_map(df, year, quarter):
     return state_name
 
 
-def display_map():
+@st.cache_resource
+def create_map_with_sensor():
     
     # m = folium.Map(location=[41,29],tiles="Stamen Toner",width="%100",height="%100")
     # folium.CircleMarker(location=(41,29),radius=100, fill_color='red').add_to(m)
@@ -54,15 +55,9 @@ def display_map():
     # geojson = json.load(f)
     # folium.GeoJson(geojson, name="geojson").add_to(map)
 
-    map = folium.Map(location=[1.372083,103.819839],zoom_start = 11.49)#  	
-
+    map = folium.Map(location=[1.372083,103.819839], zoom_start = 11.49) 	
 
     sensor.add_sensors_to_map(map)
-
-
-    # fg = folium.FeatureGroup(name="Markers")
-    # fg.add_child(sensor.add_user_marker('119077'))
-    # print('display sensors')
 
     return map
 

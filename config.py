@@ -9,6 +9,7 @@ sg_postcode = r'data/sg_zipcode_mapper.csv'
 
 df_postcode = None
 df_sensor_master = None
+df_postcodes = None
 user_address = 'NUS'
 
 first_run = True

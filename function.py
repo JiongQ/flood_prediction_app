@@ -20,8 +20,10 @@ def calculate_user_location(fg):
     fg.add_child(sensor.add_user_marker(st.session_state["myPostcode"]))
 
 
-def refresh_result():
-    return st.sidebar.button('Calculate Result')
+# @st.cache_data
+def load_data():
+    config.df_postcode = pd.read_csv(config.sg_postcode, encoding = "latin-1")
+    config.df_sensor_master = pd.read_csv(config.selected_sensor_master_list).reset_index()
 
 
 def update_address(postcode):

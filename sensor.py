@@ -1,14 +1,15 @@
 import pandas as pd
 import function as f
-import config as config
+import config
 import folium
+import streamlit as st
 
-
+# @st.cache_data
 def add_sensors_to_map(map):
-    df = pd.read_csv(config.selected_sensor_master_list)
-    df = df.reset_index()  # make sure indexes pair with number of rows
+    # df = pd.read_csv(config.selected_sensor_master_list)
+    # df = df.reset_index()  # make sure indexes pair with number of rows
 
-    for index, row in df.iterrows():
+    for index, row in config.df_sensor_master.iterrows():
         folium.Marker(
         location=[row['lat'],row['lon']],
         popup=row['sensor_id'] + ': ' + row['site_name'],
