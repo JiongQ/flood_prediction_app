@@ -49,17 +49,24 @@ def display_map():
     # m = folium.Map(location=[41,29],tiles="Stamen Toner",width="%100",height="%100")
     # folium.CircleMarker(location=(41,29),radius=100, fill_color='red').add_to(m)
 
-    map = folium.Map(location=[1.372083,103.819839],zoom_start = 11.49)#  	
-
     # Add boundary line
     # f = open('./data/planning-boundary-area.json')
     # geojson = json.load(f)
-
     # folium.GeoJson(geojson, name="geojson").add_to(map)
+
+    map = folium.Map(location=[1.372083,103.819839],zoom_start = 11.49)#  	
 
 
     sensor.add_sensors_to_map(map)
-   
+
+
+    # fg = folium.FeatureGroup(name="Markers")
+    # fg.add_child(sensor.add_user_marker('119077'))
+    # print('display sensors')
+
+    return map
+
+
     # HeatMap(data).add_to(folium.FeatureGroup(name='Heat Map').add_to(map))
     # folium.LayerControl().add_to(map)
 
@@ -99,5 +106,3 @@ def display_map():
     #     popup="AAA",
     #     icon=folium.Icon(color="red", icon="info-sign"),
     # ).add_to(map)
-
-    st_map = st_folium(map, width=700, height=450)

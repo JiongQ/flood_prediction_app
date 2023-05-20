@@ -1,13 +1,34 @@
 import streamlit as st
-import pandas as pd
 import folium
 from streamlit_folium import st_folium
 import sg_map as sg
+import sensor
+import pandas as pd
+import config
+import chatbot
+
+
 
 def my_display_text_box():
-    postal_code = st.sidebar.text_input('Postal Code', '732786')
-    st.write('Postal code ', postal_code, ' shown as purple icon in map below')
+    postal_code = st.sidebar.text_input('Postal Code',value='119077')
     return postal_code
+    # return st.sidebar.text_input('Postal Code', value='732786', key="myPostcode", on_change=calculate_user_location(fg))
+
+
+def calculate_user_location(fg):
+    fg = folium.FeatureGroup(name="Markers")
+    fg.add_child(sensor.add_user_marker(st.session_state["myPostcode"]))
+
+
+def refresh_result():
+    return st.sidebar.button('Calculate Result')
+
+
+def update_address(postcode):
+    for index, row in config.df_postcode.iterrows():
+        if row['postal'] == int(postcode):
+            config.user_address = row['address']
+
 
 
 def my_display_prediction(title, info):

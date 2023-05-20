@@ -4,8 +4,15 @@ print(sys.executable)
 import streamlit as st
 import pandas as pd
 import function as f
-import config as config
+import config
 import sg_map as sg
+import api
+import sensor
+
+import pandas as pd
+import folium
+from streamlit_folium import st_folium
+import chatbot
 
 
 def main():
@@ -13,36 +20,35 @@ def main():
     st.set_page_config(config.APP_TITLE)
     st.title(config.APP_TITLE)
     st.caption(config.APP_SUB_TITLE)
+    config.df_postcode = pd.read_csv(config.sg_postcode, encoding = "latin-1")
 
-    #Load Data
-    df_continental = pd.read_csv('data/AxS-Continental_Full Data_data.csv')
-    df_fraud = pd.read_csv('data/AxS-Fraud Box_Full Data_data.csv')
-    df_median = pd.read_csv('data/AxS-Median Box_Full Data_data.csv')
-    df_loss = pd.read_csv('data/AxS-Losses Box_Full Data_data.csv')
+    config.df_sensor_master = pd.read_csv(config.selected_sensor_master_list).reset_index()
+    # confi = df.reset_index()  # make sure indexes pair with number of rows
+  
+    map = sg.display_map()
 
-    #Display Filters and Map
-    postcode = 732786
+    # fg = folium.FeatureGroup(name="Markers")
+    # fg.add_child(sensor.add_user_marker('119077'))
+    # print('display sensors')
+    fg = folium.FeatureGroup(name="Markers")
     postcode = f.my_display_text_box()
-    # year, quarter = f.display_time_filters(df_continental)
-    # state_name = f.display_map(df_continental, year, quarter)
-    # state_name = f.display_state_filter(df_continental, state_name)
-    sg.display_map()
-    # state_name = 'Alabama'
-    # report_type = f.display_report_type_filter()
 
-    #Display Metrics
-    # st.subheader(f'{state_name} {report_type} Facts')
+    if f.refresh_result():# or config.first_run:
+        f.update_address(postcode)        
+        fg.add_child(sensor.add_user_marker(postcode))
+        # config.first_run = False
+
+    st.write('Postcode Adress:')
+    st.write(config.user_address)
+    st.write('This address shown as purple icon in map below')
+
+    st_folium(map, key="new", feature_group_to_add=fg, width=700, height=450)
+
 
     st.subheader(f'Flood Prediction at {postcode}')
 
     col1, col2, col3 = st.columns(3)
-
-    # with col1:
-    #     f.display_fraud_facts(df_fraud, year, quarter, report_type, state_name, 'State Fraud/Other Count', f'# of {report_type} Reports', string_format='{:,}')
-    # with col2:
-    #     f.display_fraud_facts(df_median, year, quarter, report_type, state_name, 'Overall Median Losses Qtr', 'Median $ Loss', is_median=True)
-    # with col3:
-    #     f.display_fraud_facts(df_loss, year, quarter, report_type, state_name, 'Total Losses', 'Total $ Loss')        
+  
 
     with col1:
         f.my_display_prediction('Risk of Flood', 'Low')
@@ -51,5 +57,15 @@ def main():
     with col3:
         f.my_display_prediction('Other Info', '***') 
 
+
+    chatbot.add_chatbot()
+
+
+def main__update_data():
+    api.update_predicted_flood_risk_csv()
+
+
 if __name__ == "__main__":
     main()
+    # main__update_data()
+    # api.call_one_map_api()
