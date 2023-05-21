@@ -59,7 +59,7 @@ def main():
     with col1:
         f.my_display_prediction('Risk of Flood', 'Low')
     with col2:
-        f.my_display_prediction('Nearest High Flood Risk Location', 'NIL')
+        f.my_display_prediction('Nearest High Flood Risk Location', 'Meng Suan OD')
     with col2:
         f.my_display_prediction('Distance to High Flood Risk Location', '5327m') 
 
