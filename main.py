@@ -39,6 +39,8 @@ def main():
     if st.sidebar.button('Calculate Result'):
         f.update_address(postcode)        
         fg.add_child(sensor.add_user_marker(postcode))
+        config.nearest_flood_risk_location = 'Meng Suan OD'
+        config.distance_to_nearest_risk_location = '8537m'
     
     if st.sidebar.button('Reset View'):
         print('reset triggered')
@@ -59,9 +61,9 @@ def main():
     with col1:
         f.my_display_prediction('Risk of Flood', 'Low')
     with col2:
-        f.my_display_prediction('Nearest High Flood Risk Location', 'Meng Suan OD')
+        f.my_display_prediction('Nearest High Flood Risk Location', f'{config.nearest_flood_risk_location}')
     with col2:
-        f.my_display_prediction('Distance to High Flood Risk Location', '5327m') 
+        f.my_display_prediction('Distance to High Flood Risk Location', f'{config.distance_to_nearest_risk_location}') 
 
 
     chatbot.add_chatbot()

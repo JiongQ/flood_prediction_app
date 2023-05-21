@@ -9,6 +9,10 @@ ml_trained_model = r'L://Data Cleaning//processing//ml_result__3_flood_risk//_se
 sg_postcode = r'data/sg_zipcode_mapper.csv'
 
 
+nearest_flood_risk_location = 'NIL'
+distance_to_nearest_risk_location = 'NIL'
+
+
 df_postcode = None
 df_predicted_flood_risks_FINAL = None
 df_sensor_master = None
