@@ -41,6 +41,9 @@ def main():
         fg.add_child(sensor.add_user_marker(postcode))
         config.nearest_flood_risk_location = 'Meng Suan OD'
         config.distance_to_nearest_risk_location = '8537m'
+        E, E1 = f.get_nearest_E_location(postcode)
+        config.nearest_E = E
+        config.nearest_E_distance =E1
     
     if st.sidebar.button('Reset View'):
         print('reset triggered')
@@ -55,16 +58,33 @@ def main():
 
     st.subheader(f'Flood Prediction at {postcode}')
 
-    col1, col2 = st.columns(2)
-  
+    f.my_display_prediction('Risk of Flood', 'Low')
 
+    col1, col2= st.columns(2)
+
+    # with col1:
+        
+    # with col2:
+    #     f.my_display_prediction('Nearest Emergency Organisation', f'{config.nearest_E}')
+    # with col3:
+    #     f.my_display_prediction('Distance to Nearest Emergency Org', f'{config.nearest_E_distance}') 
     with col1:
-        f.my_display_prediction('Risk of Flood', 'Low')
-    with col2:
         f.my_display_prediction('Nearest High Flood Risk Location', f'{config.nearest_flood_risk_location}')
     with col2:
         f.my_display_prediction('Distance to High Flood Risk Location', f'{config.distance_to_nearest_risk_location}') 
+    
+    # st.write('Nearest Emergency Organisation:')
+    f.my_display_prediction('Nearest Emergency Organisation:', f'{config.nearest_E}')
 
+    # st.write('')
+    if config.nearest_E_distance=='NIL':
+        unit = ''
+    else:
+        unit = 'km'
+    f.my_display_prediction('Distance to Nearest Emergency Organisation:', f'{config.nearest_E_distance}{unit}')
+
+
+    # st.subheader(f'{config.nearest_E_distance}{unit}')
 
     chatbot.add_chatbot()
 

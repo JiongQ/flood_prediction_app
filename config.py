@@ -11,11 +11,14 @@ sg_postcode = r'data/sg_zipcode_mapper.csv'
 
 nearest_flood_risk_location = 'NIL'
 distance_to_nearest_risk_location = 'NIL'
+nearest_E = 'NIL'
+nearest_E_distance = 'NIL'
 
 
 df_postcode = None
 df_predicted_flood_risks_FINAL = None
 df_sensor_master = None
+df_emergency_station = None
 map_default_view = None
 
 
