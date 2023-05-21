@@ -23,7 +23,7 @@ def calculate_user_location(fg):
 # @st.cache_data
 def load_data():
     config.df_postcode = pd.read_csv(config.sg_postcode, encoding = "latin-1")
-    config.df_sensor_master = pd.read_csv(config.selected_sensor_master_list).reset_index()
+    config.df_predicted_flood_risks_FINAL = pd.read_csv(config.predicted_flood_risks_FINAL).reset_index()
 
 
 def update_address(postcode):

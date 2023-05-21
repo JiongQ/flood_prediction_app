@@ -51,33 +51,31 @@ def main():
 
     st_folium(map, key="new", feature_group_to_add=fg, width=700, height=450)#scrollWheelZoom=False
 
-
-        # map = sg.create_map_with_sensor()
-        # rendered_map['zoom'] = 11.49
-        # rendered_map['location'] = [1.372083,103.819839]
-
-
     st.subheader(f'Flood Prediction at {postcode}')
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
   
 
     with col1:
         f.my_display_prediction('Risk of Flood', 'Low')
     with col2:
-        f.my_display_prediction('Nearest Emergency Center', '***')
-    with col3:
-        f.my_display_prediction('Other Info', '***') 
+        f.my_display_prediction('Nearest High Flood Risk Location', 'NIL')
+    with col2:
+        f.my_display_prediction('Distance to High Flood Risk Location', '5327m') 
 
 
     chatbot.add_chatbot()
 
 
 def main__update_data():
-    api.update_predicted_flood_risk_csv()
+    api.update_predicted_flood_risk_csv2()
+    sensor.get_predicted_flood_risk_FINAL()
 
 
 if __name__ == "__main__":
     main()
     # main__update_data()
-    # api.call_one_map_api()
+
+    # api.get_complete_prediction_input_csv()
+
+
