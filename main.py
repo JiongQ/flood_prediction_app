@@ -21,21 +21,15 @@ def main():
     st.title(config.APP_TITLE)
     st.caption(config.APP_SUB_TITLE)
 
-    # config.df_postcode = pd.read_csv(config.sg_postcode, encoding = "latin-1")
-    # config.df_sensor_master = pd.read_csv(config.selected_sensor_master_list).reset_index()
-
     f.load_data()
 
     map = sg.create_map_with_sensor()
     config.map_default_view = map.get_bounds()
 
-    # fg = folium.FeatureGroup(name="Markers")
-    # fg.add_child(sensor.add_user_marker('119077'))
-    # print('display sensors')
+
     fg = folium.FeatureGroup(name="Markers")
     postcode = f.my_display_text_box()
 
-    # if f.refresh_result():
     if st.sidebar.button('Calculate Result'):
         f.update_address(postcode)        
         fg.add_child(sensor.add_user_marker(postcode))
@@ -62,29 +56,21 @@ def main():
 
     col1, col2= st.columns(2)
 
-    # with col1:
-        
-    # with col2:
-    #     f.my_display_prediction('Nearest Emergency Organisation', f'{config.nearest_E}')
-    # with col3:
-    #     f.my_display_prediction('Distance to Nearest Emergency Org', f'{config.nearest_E_distance}') 
     with col1:
         f.my_display_prediction('Nearest High Flood Risk Location', f'{config.nearest_flood_risk_location}')
     with col2:
         f.my_display_prediction('Distance to High Flood Risk Location', f'{config.distance_to_nearest_risk_location}') 
     
-    # st.write('Nearest Emergency Organisation:')
+
     f.my_display_prediction('Nearest Emergency Organisation:', f'{config.nearest_E}')
 
-    # st.write('')
+
     if config.nearest_E_distance=='NIL':
         unit = ''
     else:
         unit = 'km'
     f.my_display_prediction('Distance to Nearest Emergency Organisation:', f'{config.nearest_E_distance}{unit}')
 
-
-    # st.subheader(f'{config.nearest_E_distance}{unit}')
 
     chatbot.add_chatbot()
 

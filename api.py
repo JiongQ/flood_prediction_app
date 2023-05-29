@@ -30,8 +30,6 @@ def get_raw_regional_history_rainfall(region):
     df_1 = df_0[['time', 'precip_mm', 'will_it_rain', 'chance_of_rain']].copy()
     df_result = pd.concat([df_result, df_1])        
 
-    # filename = config.weather_forecast_csv.split('.')[0]
-    # df_result.to_csv(f'{filename}__History__{region}.csv' , index=False)
     return df_result
 
 
@@ -62,7 +60,6 @@ def get_last_5_history_input_csv():
 
     last_5_history = df_result.iloc[-5]
     last_5_history.to_csv(config.complete_lastday_history, index=False)
-    # print(last_5_history)
     return last_5_history
     
 #==============================================================
@@ -78,7 +75,6 @@ def call_weather_forecast_api():
     }
 
     response = requests.get(url, headers=headers, params=querystring)
-    # update_weather_forecast_csv(response.json())
     return response.json()
 
 
@@ -94,26 +90,22 @@ def get_processed_regional_predicted_rainfall(region):
     df = get_raw_regional_predicted_rainfall(region)
     df['predicted_rainfall'] = df['will_it_rain'] * df['precip_mm'] * 10 #60
     df_result = df[['time', 'predicted_rainfall']]
-    # print(df_result)
     return df_result
 
 
 def get_raw_regional_predicted_rainfall(region):
     lat_lon = config.sg_region_lat_lon[region]
     json_obj = call_regional_weather_forecast_api(lat_lon)
-    # print(json_obj)
 
     dict_days = json_obj['forecast']['forecastday']
     df_result = pd.DataFrame(columns=['time', 'precip_mm','will_it_rain', 'chance_of_rain'])
-    # print(f'Length: {len(dict_days)}')
+ 
 
     for i in range(0,3):
         df_0 = pd.json_normalize(dict_days[i]['hour'])
         df_1 = df_0[['time', 'precip_mm', 'will_it_rain', 'chance_of_rain']].copy()
         df_result = pd.concat([df_result, df_1])        
 
-    # filename = config.weather_forecast_csv.split('.')[0]
-    # df_result.to_csv(f'{filename}__History__{region}.csv' , index=False)
     return df_result
 
 
@@ -133,13 +125,11 @@ def get_complete_prediction_input_csv():
     df['west'] = df_W['predicted_rainfall']
     
     df_0 = add_previous_hours_record(df)
-    # last_5_history = get_last_5_history_input_csv()
-    # lists = [last_5_history, df_0]
-    # df_result = pd.concat(lists)
+
 
     df_0.to_csv(config.complete_prediction_input, index=False)
     return df_0
-    # print(df_0)
+
 
 
 def add_previous_hours_record(df):
@@ -189,8 +179,6 @@ def get_weather_forecast():
         df_result = pd.concat([df_result, df_1])        
 
     df_result.to_csv(config.weather_forecast_csv, index=False)
-    # print('df_result Weather Forecast:')
-    # print(df_result)
     return df_result
 
 
@@ -198,8 +186,6 @@ def get_weather_forecast():
 
 
 def update_predicted_flood_risk_csv2():
-    # df_weather_forecast = get_weather_forecast()
-    # df = df_weather_forecast.reset_index()
 
     df = get_complete_prediction_input_csv()
     print(df)
@@ -217,7 +203,7 @@ def update_predicted_flood_risk_csv2():
 
 
 def run_ml_prediction(_X, time):
-    # df = get_complete_prediction_input_csv()
+
     df = pd.DataFrame(columns=['time', 'sensor_id', 'flood_risk'])
     X = _X.to_numpy().reshape(1, -1)
     print(X)
@@ -227,7 +213,6 @@ def run_ml_prediction(_X, time):
             continue
         
         path = config.ml_trained_model + _i
-        # X = np.array([[predicted_rain_fall] * 30], dtype=np.float32)
         with open(path, 'rb') as f:
             loaded_model = pickle.load(f)
 
@@ -239,8 +224,6 @@ def run_ml_prediction(_X, time):
 
     return df
 
-
-# https://developers.onemap.sg/privateapi/commonsvc/revgeocode?location=1.3,103.8&token=0v9hsciobp1ifa5bgpkin21cs3&buffer=100&addressType=all
     
 
 def call_one_map_api():

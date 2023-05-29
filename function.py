@@ -13,7 +13,6 @@ import geopy.distance
 def my_display_text_box():
     postal_code = st.sidebar.text_input('Postal Code',value='119077')
     return postal_code
-    # return st.sidebar.text_input('Postal Code', value='732786', key="myPostcode", on_change=calculate_user_location(fg))
 
 
 def calculate_user_location(fg):
@@ -21,7 +20,6 @@ def calculate_user_location(fg):
     fg.add_child(sensor.add_user_marker(st.session_state["myPostcode"]))
 
 
-# @st.cache_data
 def load_data():
     config.df_postcode = pd.read_csv(config.sg_postcode, encoding = "latin-1")
     config.df_predicted_flood_risks_FINAL = pd.read_csv(config.predicted_flood_risks_FINAL).reset_index()
@@ -39,7 +37,6 @@ def my_display_prediction(title, info):
 
 
 def get_nearest_E_location(postcode):
-    # df = 
     for index, row in config.df_postcode.iterrows():
         if row['postal'] == int(postcode):
             user_lat = row['latitude']
@@ -48,7 +45,6 @@ def get_nearest_E_location(postcode):
 
     coords_1 = (user_lat, user_lon)
     
-# print geopy.distance.geodesic(coords_1, coords_2).km
 
     nearest_E_distance = 1000000
     nearest_E = None
